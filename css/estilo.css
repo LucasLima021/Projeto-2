@@ -14,7 +14,7 @@
 /*chamando a variavel que tem a cor preta para ser o background do site*/
 body{
     background: var(--preta);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
@@ -100,4 +100,8 @@ i{
     height: 100%;
     width: 100%;
     display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
 }
