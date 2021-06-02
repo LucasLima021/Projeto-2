@@ -1,0 +1,103 @@
+/*elementos base*/
+/*declarando variável no CSS - root é o documento raiz*/
+:root{
+    --vermelha: #E50914;
+    --preta: #141414; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*chamando a variavel que tem a cor preta para ser o background do site*/
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row; /*padrão do flexbox*/
+    align-items: center; /*alinhamento na vertical*/
+    justify-content: space-between; /*alinhamento na horizontal*/
+}
+
+header .logo{
+    color: var(--vermelha);
+    font-family: arial black;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+a:hover{
+    color: #fff;
+}
+
+/*filme principal*/
+.filme-main{
+    font-size: 18px;
+    background-image: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/capa-house.jpg');
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column; /*quando a direção é coluna, o justify content (que sempre segue a direção do flex) passa a alinhar o conteúdo na vertical e o align-items na horizontal, há essa troca*/
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-main .descricao{
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.filme-main .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    /*transition se refere a transição de uma animação*/
+    transition: .5s ease all;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+i{
+    margin-right: 8px;
+}
+
+/*container (wrapper) é fundamental em um código, ele envelopa vários elementos*/
+.container{
+    margin-left: 20px;
+}
+
+.filme-main .container{
+    width: 60%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
